@@ -240,7 +240,8 @@ html ::-webkit-scrollbar-thumb{
 }
 
 .login-form-container form p a{
-    color:var(--green);
+    color:var(--dark-color);
+    text-decoration: underline;
 }
 
 .login-form-container form p a:hover{
