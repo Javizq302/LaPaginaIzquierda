@@ -1,34 +1,59 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const searchForm = document.querySelector('.search-form');
-    const loginForm = document.querySelector('.login-form-container');
+searchForm = document.querySelector('.search-form');
 
-    document.querySelector('#search-btn').addEventListener('click', function() {
-        searchForm.classList.toggle('active');
-    });
+document.querySelector('#search-btn').onclick = () =>{
+  searchForm.classList.toggle('active');
+}
 
-    document.querySelector('#login-btn').addEventListener('click', function() {
-        loginForm.classList.toggle('active');
-    });
+let loginForm = document.querySelector('.login-form-container');
 
-    document.querySelector('#close-login-btn').addEventListener('click', function() {
-        loginForm.classList.remove('active');
-    });
+document.querySelector('#login-btn').onclick = () =>{
+  loginForm.classList.toggle('active');
+}
 
-    window.onscroll = () => {
-        searchForm.classList.remove('active');
+document.querySelector('#close-login-btn').onclick = () =>{
+  loginForm.classList.remove('active');
+}
 
-        if(window.scrollY > 80){
-            document.querySelector('.header .header-2').classList.add('active');
-        }else{
-            document.querySelector('.header .header-2').classList.remove('active');
-        }
-    };
+window.onscroll = () =>{
 
-    window.onload = () => {
-        if(window.scrollY > 80){
-            document.querySelector('.header .header-2').classList.add('active');
-        }else{
-            document.querySelector('.header .header-2').classList.remove('active');
-        }
-    };
-});
+  searchForm.classList.remove('active');
+
+  if(window.scrollY > 93){
+    document.querySelector('.header .header-2').classList.add('active');
+  }else{
+    document.querySelector('.header .header-2').classList.remove('active');
+  }
+
+}
+
+window.onload = () =>{
+
+  if(window.scrollY > 80){
+    document.querySelector('.header .header-2').classList.add('active');
+  }else{
+    document.querySelector('.header .header-2').classList.remove('active');
+  }
+
+  fadeOut();
+
+}
+
+var swiper = new Swiper(".books-slider", {
+    loop:true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 9500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
