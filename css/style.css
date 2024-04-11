@@ -448,7 +448,7 @@ section {
 }
 
 .swiper-button-next,
-.swiper-button-pre {
+.swiper-button-prev {
     border: var(--border-hover);
     height: 4rem;
     width: 4rem;
@@ -457,12 +457,12 @@ section {
 }
 
 .swiper-button-next::after,
-.swiper-button-pre::after {
+.swiper-button-prev::after {
     font-size: 2rem
 }
 
 .swiper-button-next:hover,
-.swiper-button-pre:hover {
+.swiper-button-prev:hover {
     background: var(--black);
     color: #fff;
 }
