@@ -28,7 +28,7 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
-    background: #F0F3F5;
+    background: #fff;
 }
 
 html ::-webkit-scrollbar {
@@ -85,8 +85,12 @@ section {
     font-weight: 500;
 }
 
+.btn:hover {
+    background: var(--dark-color);
+}
+
 .header .header-1 {
-    background: #F0F3F5;
+    background: #fff;
     padding: 1.5rem 9%;
     display: flex;
     align-items: center;
@@ -192,7 +196,7 @@ section {
 .bottom-navbar a {
     font-size: 2.5rem;
     padding: 2rem;
-    color: #fff
+    color: #fff;
 }
 
 .bottom-navbar a:hover {
@@ -217,7 +221,7 @@ section {
 }
 
 .login-form-container form {
-    background: #F0F3F5;
+    background: #fff;
     border: var(--border);
     width: 40rem;
     padding: 2rem;
@@ -537,7 +541,78 @@ section {
     color: var(--yellow);
 }
 
+.deal {
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 
+.deal .content {
+    flex: 1 1 42rem;
+}
+
+.deal .image {
+    flex: 1 1 42rem;
+}
+
+.deal .image img {
+    width: 100%;
+}
+
+.deal .content h3 {
+    color: var(--yellow);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.deal .content h1 {
+    color: var(--black);
+    font-size: 4rem;
+}
+
+.deal .content p {
+    padding: 1rem 0;
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.reviews .reviews-slider .box {
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+}
+
+.reviews .reviews-slider .box:hover {
+    border: var(--border-hover);
+}
+
+.reviews .reviews-slider .box img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .reviews-slider .box h3 {
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: .5rem 0;
+}
+
+.reviews .reviews-slider .box p {
+    color: var(--light-color);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.reviews .reviews-slider .box .stars i {
+    font-size: 1.7rem;
+    color: var(--yellow);
+}
 
 
 
